@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
+:root
+{
+    --color-one: #171717;
+    --color-two: #444444;
+    --color-three: #DA0037;
+    --color-for:#EDEDED;
+}
+body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Fira Sans', sans-serif;
+}
+form{
+    width: 700px;
+    height: auto;
+    background-color: var(--color-two);
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    border-radius: 6px;
+}
+label{
+    font-size: 24px;
+    color: white;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+input{
+    border-radius: 6px;
+    border-style: none;
+    width: 90%;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+select{
+    border-radius: 6px;
+    border-style: none;
+    width: 90%;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+button {
+    margin-top: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: white;
+    transition: 2s;
+    border-style: none;
+    width: 70%;
+    height: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+button:hover{
+    background-color: var(--color-two);
+    color:white;
+}
+header{
+    width: 100%;
+    height: 60px;
+    font-size: 30px;
+    color: white;
+    background-color: #DA0037;
+    text-align: center;
+}
+h3{
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+#regresar{
+    width: 100%;
+    height: 30px;
+}

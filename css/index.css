@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
+:root
+{
+    --color-one: #171717;
+    --color-two: #444444;
+    --color-three: #DA0037;
+    --color-for:#EDEDED;
+}
+body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Fira Sans', sans-serif;
+   
+}
+html
+{
+     background-image: url("../img/banner.jpg");
+     background-color: transparent;
+     background-size: cover;
+     background-position:center center;
+     background-repeat:no-repeat;
+}
+.login
+{
+    width: 500px;
+    height: 100%;
+    border-radius: 6px ;
+    background-color: var(--color-three);
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: -70px 30px var(--color-two);
+}
+.login .login-header
+{
+    width: 100%;
+    height: 100%;
+    font-size: 24px;
+}
+.login .login-body{
+    width: 100%;
+    height: 100%;
+
+}
+.login .login-body label{
+    width: 100%;
+    font-size: 20px;
+}
+.login .login-body input{
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 30px;
+    border-radius: 6px;
+    border-style: none;
+}
+.login .login-body button{
+    margin-top: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: white;
+    transition: 2s;
+    border-style: none;
+    width: 70%;
+    height: 25px;
+    margin-bottom: 20px;
+}
+.login .login-body a{
+    margin-top: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 2s;
+    border-style: none;
+    width: auto;
+    color: white;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 6px;
+   
+}
+.login .login-body button:hover{
+    background-color: var(--color-three);
+    color:white;
+}
+.login .login-body a:hover{
+    background-color: white;
+    color:var(--color-three);
+}
+.espacio{
+    height: 20px;
+    margin-top: 20px;
+}
+.modal-contraseña{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 50;
+    justify-content: center;
+    align-items: center;
+    transition: 2s;
+    display: none;
+}
+.contraseña{
+    margin-top: 170px;
+    width: 550px;
+    height: 550px;
+    border-radius: 6px ;
+    background-color: var(--color-one);
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    z-index:60;
+}
+.contraseña-header{
+    width: 100%;
+    height: 20%;
+    font-size: 24px;
+}
+.contraseña-body label{
+    width: 100%;
+    font-size: 20px;
+}
+.contraseña-body input{
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 30px;
+    border-radius: 6px;
+    border-style: none;
+}
+.contraseña-body button{
+    margin-top: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: white;
+    transition: 2s;
+    border-style: none;
+    width: 70%;
+    height: 25px;
+    margin-bottom: 20px;
+}
+.contraseña-body button:hover{
+    background-color: var(--color-one);
+    color:white;
+}
+#cerrar-contraseña{
+    color: white;
+    cursor: pointer;
+    font-size: 40px;
+    transition: 2s;
+    margin-right: 100px;
+    margin-top: 30px;
+    float: right;
+
+}
+#cerrar-contraseña:hover{
+    color: black;
+}
+.modal-Registro{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 50;
+    justify-content: center;
+    align-items: center;
+    transition: 2s;
+    cursor: pointer;
+    display: none;
+}
+.Registro{
+    margin-top: 100px;
+    width: 550px;
+    height: auto;
+    border-radius: 6px ;
+    background-color: var(--color-one);
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    z-index:60;
+}
+.Registro-header{
+    width: 100%;
+    height: 20%;
+    font-size: 24px;
+}
+.Registro-body label{
+    width: 100%;
+    font-size: 20px;
+}
+.Registro-body input{
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 30px;
+    border-radius: 6px;
+    border-style: none;
+}
+.Registro-body button{
+    margin-top: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: white;
+    transition: 2s;
+    border-style: none;
+    width: 70%;
+    height: 25px;
+    margin-bottom: 20px;
+}
+.Registro-body button:hover{
+    background-color: var(--color-one);
+    color:white;
+}
+#cerrar-registro{
+    color: white;
+    cursor: pointer;
+    font-size: 40px;
+    transition: 2s;
+    float: right;
+    margin-right: 100px;
+    margin-top: 30px;
+}
+#cerrar-registro:hover{
+    color: black;
+}
