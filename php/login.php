@@ -22,16 +22,10 @@ if (mysqli_query($conn, $sql))
     $datos = mysqli_query($conn, $sql);
     $arrayDatos = mysqli_fetch_array($datos);
 
-    $user_crr = $arrayDatos['correo'];
-    $user_contra = $arrayDatos['password'];
     $user_estd = $arrayDatos['est_user'];
     $user_id = $arrayDatos['id_usuario'];
     $tipo_user = $arrayDatos['tipo_user'];
 
-    if ($user_crr == $user)
-    {
-       if ($contrasena == $user_contra)
-       {
            if($user_estd == 2)
            {
                 echo '<script> alert("Error aun no esta habilitado para ingresar");
@@ -50,11 +44,10 @@ if (mysqli_query($conn, $sql))
                {
                    if($horactual >= $horaing && $horactual < $horasalida)
                    {
-                       ?>
-                        <script type="text/javascript">
-                            location.href="../inicio.php?id_tp=<?php echo $tipo_user;?>&usr=<?php echo $user_id?>";
-                        </script>
-                       <?php
+                       $_SESSION["typeUser"] = $tipo_user;
+                       $_SESSION["Id"] = $user_id;
+                       
+                       header("Location: ./../inicio.php");
                    }
                    else
                    {
@@ -65,25 +58,10 @@ if (mysqli_query($conn, $sql))
                }
                else
                {
-                   echo '<script>alert("Error no se pudo")</script>';
+                   echo '<script>alert("Error no se pudo validar el horario de ingreso")</script>';
                }
 
            }
-
-        }
-        else
-        {
-            echo '<script> alert("Error usuario o contraseña");
-            location.href="../Index.html";</script>';
-        }
-
-    }
-    else
-    {
-
-        echo '<script> alert("Error usuario o contraseña");
-        location.href="../Index.html";</script>';
-    }
 }
 else
 {
